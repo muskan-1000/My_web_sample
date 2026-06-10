@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon_atoms.ico" type="image/x-icon">
+    <title>Muskan Gurjar | AI/ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">MG<span class="logo-dot">.</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">MUSKAN GURJAR</h1>
+                <div class="hero-typing-wrapper">
+                    <span class="hero-typing" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-tagline">"Building intelligent AI-powered solutions focused on real-world impact and innovation."</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="/workspace/uploads/MuskanGurjar-resume.pdf" download class="btn btn-secondary">Download Resume</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="https://github.com/muskan-1000" target="_blank" class="btn btn-icon" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                    <a href="https://www.linkedin.com/in/muskan-gurjar-a02176326/" target="_blank" class="btn btn-icon" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-glow"></div>
+                <div class="hero-image-frame">
+                    <img src="./profile.jpg" alt="Muskan Gurjar" class="hero-image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About <span class="highlight">Me</span></h2>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p>I am a passionate <strong>B.Tech Computer Science Engineering</strong> student specializing in <strong>Artificial Intelligence and Machine Learning (CSE-AIML)</strong> with a CGPA of <strong>8.51</strong> at Oriental Institute of Science & Technology, Bhopal.</p>
+                    <p>I enjoy building innovative AI-powered solutions that solve real-world problems using <strong>Machine Learning, Deep Learning, NLP, Predictive Analysis, and Generative AI</strong> technologies.</p>
+                    <p>I am passionate about intelligent systems, research, innovation, and creating impactful digital experiences. My goal is to contribute to cutting-edge AI research and develop solutions that make a meaningful difference.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">8.51</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Research Papers</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Technical <span class="highlight">Skills</span></h2>
+            <div class="skills-grid fade-in">
+                <div class="skill-card" data-skill="95">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 95%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>C / C++</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 80%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>SQL</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 85%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="90">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 90%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="88">
+                    <div class="skill-icon">🧠</div>
+                    <h3>Deep Learning</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-icon">💬</div>
+                    <h3>NLP</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 85%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="87">
+                    <div class="skill-icon">🔥</div>
+                    <h3>TensorFlow</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 87%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-icon">⚡</div>
+                    <h3>PyTorch</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 85%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="88">
+                    <div class="skill-icon">✨</div>
+                    <h3>Generative AI</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="90">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data Analysis</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--skill-width: 90%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Experience & <span class="highlight">Leadership</span></h2>
+            <div class="experience-grid fade-in">
+                <div class="experience-category">
+                    <h3 class="category-title">Internships & Workshops</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>AI-ML Virtual Internship (10-Week)</h4>
+                                <span class="timeline-org">Google for Developers</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Virtual Internship - Conversational Data Analysis with LLMs</h4>
+                                <span class="timeline-org">AICTE & VOIS for Tech</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Innovation, Design & Entrepreneurship (IDE) Bootcamp (5-Day)</h4>
+                                <span class="timeline-org">AICTE Innovation Cell</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>2-Day Workshop on Web Development</h4>
+                                <span class="timeline-org">MANIT</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>5-Day Workshop on Big Data Analytics</h4>
+                                <span class="timeline-org">Technical Workshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-category">
+                    <h3 class="category-title">Leadership & Activities</h3>
+                    <div class="leadership-cards">
+                        <div class="leadership-card">
+                            <div class="leadership-icon">👑</div>
+                            <h4>Class Representative (CR)</h4>
+                            <p>Leading and coordinating class activities and communication</p>
+                        </div>
+                        <div class="leadership-card">
+                            <div class="leadership-icon">🤖</div>
+                            <h4>AI Club Member</h4>
+                            <p>Active participant in AI/ML research and discussions</p>
+                        </div>
+                        <div class="leadership-card">
+                            <div class="leadership-icon">🎯</div>
+                            <h4>Event Management Volunteer</h4>
+                            <p>Organizing and managing technical and cultural events</p>
+                        </div>
+                        <div class="leadership-card">
+                            <div class="leadership-icon">🎭</div>
+                            <h4>Cultural Activities</h4>
+                            <p>Active participation in cultural programs and events</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid fade-in">
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">🎯</div>
+                        <span class="project-badge">Gen AI Hackathon</span>
+                    </div>
+                    <h3 class="project-title">AI-Based Personalized Career & Skills Advisor</h3>
+                    <p class="project-desc">An intelligent decision-support system designed to analyze skill gaps and recommend tailored career paths and upskilling strategies using predictive analysis and personalized AI recommendations.</p>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Predictive Analysis</span>
+                        <span class="tag">Gen AI</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">💒</div>
+                        <span class="project-badge">IDE Bootcamp Finalist</span>
+                    </div>
+                    <h3 class="project-title">KALYANAM: Escrow-Protected Wedding Marketplace</h3>
+                    <p class="project-desc">An innovative, secure unified platform utilizing escrow systems for streamlined wedding planning. Features escrow-based milestone payments, anonymous vendor bidding, and AI-powered vendor matching.</p>
+                    <div class="project-tags">
+                        <span class="tag">Escrow System</span>
+                        <span class="tag">AI Matching</span>
+                        <span class="tag">Full Stack</span>
+                        <span class="tag">FinTech</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">🚂</div>
+                        <span class="project-badge">Smart India Hackathon</span>
+                    </div>
+                    <h3 class="project-title">AI-Powered Train Traffic Control System</h3>
+                    <p class="project-desc">An AI-powered system aimed at maximizing section throughput and optimizing high-precision traffic control for transit networks. Intelligent train scheduling and predictive railway traffic optimization.</p>
+                    <div class="project-tags">
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Optimization</span>
+                        <span class="tag">Real-time Systems</span>
+                        <span class="tag">IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section" id="research">
+        <div class="container">
+            <h2 class="section-title fade-in">Research <span class="highlight">Publications</span></h2>
+            <div class="research-grid fade-in">
+                <div class="research-card">
+                    <div class="research-badge">IJEDR</div>
+                    <h3>Personalized Career and Skills Advisor</h3>
+                    <p>Contributed to research work on AI-based recommendation system for personalized career guidance and skill gap analysis.</p>
+                    <span class="research-type">Research Paper - International Journal</span>
+                </div>
+                <div class="research-card">
+                    <div class="research-badge ieee">IEEE</div>
+                    <h3>KALYANAM: A Unified Escrow-Based Wedding Marketplace</h3>
+                    <p>Published research on innovative escrow-based marketplace platform for secure and streamlined wedding planning transactions.</p>
+                    <span class="research-type">Research Paper - IEEE Conference</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title fade-in">Education <span class="highlight">Background</span></h2>
+            <div class="education-grid fade-in">
+                <div class="education-card">
+                    <div class="edu-icon">🎓</div>
+                    <h3>B.Tech in Computer Science Engineering</h3>
+                    <h4>Artificial Intelligence & Machine Learning</h4>
+                    <p class="edu-institution">Oriental Institute of Science & Technology, Bhopal</p>
+                    <div class="edu-score">
+                        <span class="score-label">CGPA</span>
+                        <span class="score-value">8.51</span>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="edu-icon">📚</div>
+                    <h3>Class XII (PCM)</h3>
+                    <h4>Science Stream</h4>
+                    <p class="edu-institution">Christ Memorial School, Bhopal</p>
+                    <div class="edu-score">
+                        <span class="score-label">Percentage</span>
+                        <span class="score-value">75%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <h2 class="section-title fade-in">Certifications & <span class="highlight">Achievements</span></h2>
+            <div class="cert-grid fade-in">
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <h4>The Joy of Computing Using Python</h4>
+                    <p>NPTEL - IIT Madras</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <h4>Introduction to Machine Learning</h4>
+                    <p>NPTEL - IIT Kharagpur</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🛡️</div>
+                    <h4>Introduction to Cybersecurity</h4>
+                    <p>Cisco Networking Academy</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏆</div>
+                    <h4>IDE Bootcamp Finalist</h4>
+                    <p>AICTE Innovation Cell - Team Kalyaan</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🚀</div>
+                    <h4>Smart India Hackathon</h4>
+                    <p>SIH Participant & Contributor</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">✨</div>
+                    <h4>Gen AI Hackathon</h4>
+                    <p>Generative AI Competition Participant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-wrapper fade-in">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <a href="mailto:muskangurjar0410@gmail.com" class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">muskangurjar0410@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919302614671" class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91 9302614671</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/muskan-1000" target="_blank" class="contact-item">
+                            <div class="contact-icon">💻</div>
+                            <div>
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/muskan-1000</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muskan-gurjar-a02176326/" target="_blank" class="contact-item">
+                            <div class="contact-icon">🔗</div>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/muskan-gurjar</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Muskan Gurjar. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/muskan-1000" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/muskan-gurjar-a02176326/" target="_blank">LinkedIn</a>
+                <a href="/cdn-cgi/l/email-protection#a1ccd4d2cac0cfc6d4d3cbc0d391959091e1c6ccc0c8cd8fc2cecc">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
+</body>
+
+</html>

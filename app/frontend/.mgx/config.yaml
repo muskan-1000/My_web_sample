@@ -1,0 +1,4 @@
+install: pnpm install
+dev: pnpm run dev
+build: pnpm run build
+build_path: yDw8SfInyzWWTjYTFCX3kPSDJMROQTb8jg
