@@ -1446,3 +1446,108 @@ body {
 }
 
 .skill-bar { display: none; }
+
+/* =========================================================
+   MUSKAN'S EDITORIAL LIGHT THEME — intentional full redesign
+   Warm ivory / forest green / muted terracotta
+   ========================================================= */
+:root {
+  color-scheme: light;
+  --bg-primary: #f7f4ec;
+  --bg-card: #fffdf8;
+  --bg-card-hover: #f0ece1;
+  --accent-primary: #315b46;
+  --accent-secondary: #c4775a;
+  --text-heading: #202c25;
+  --text-body: #59645c;
+  --text-muted: #788078;
+  --glass-bg: rgba(255, 253, 248, .88);
+  --glass-border: rgba(49, 91, 70, .16);
+  --glow-primary: rgba(49, 91, 70, .10);
+  --glow-secondary: rgba(196, 119, 90, .10);
+  --font-primary: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --transition: all .25s ease;
+}
+html { background: #f7f4ec; }
+body {
+  background: #f7f4ec !important;
+  color: #59645c !important;
+  font-family: 'DM Sans', sans-serif;
+}
+#particles-canvas, .cursor-glow { display: none !important; }
+.navbar, .navbar.scrolled {
+  background: rgba(247,244,236,.94) !important;
+  border-bottom: 1px solid #e5e0d4 !important;
+  box-shadow: 0 4px 22px rgba(36,48,39,.045) !important;
+  backdrop-filter: blur(14px);
+}
+.nav-logo, .hero-name, .section-title, .category-title,
+.timeline-content h4, .leadership-card h4, .project-title,
+.research-card h3, .education-card h3, .contact-info h3 {
+  color: #202c25 !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+}
+.logo-dot, .highlight { color: #c4775a !important; }
+.nav-links a { color: #59645c !important; }
+.nav-links a:hover { color: #315b46 !important; }
+.nav-links a::after { background: #c4775a !important; }
+.hero {
+  background: radial-gradient(ellipse at 82% 20%, rgba(196,119,90,.11), transparent 32%),
+              radial-gradient(ellipse at 12% 80%, rgba(49,91,70,.10), transparent 36%),
+              #f7f4ec !important;
+}
+.hero-greeting { color: #315b46 !important; }
+.hero-name { letter-spacing: -.035em; }
+.hero-tagline, .about-text p, .project-desc, .research-card p,
+.leadership-card p, .contact-info > p { color: #59645c !important; }
+.hero-image-glow { background: rgba(196,119,90,.14) !important; filter: blur(18px); }
+.hero-image-frame { border: 1px solid #d9d1c2 !important; box-shadow: 14px 14px 0 #e9e2d5 !important; }
+.section { background: #f7f4ec !important; }
+.section:nth-of-type(even) { background: #f0ede4 !important; }
+.section-title::after { background: #c4775a !important; }
+.stat-card, .skill-card, .timeline-content, .leadership-card,
+.project-card, .research-card, .education-card, .cert-card,
+.contact-form, .contact-item {
+  background: #fffdf8 !important;
+  border: 1px solid #e5e0d4 !important;
+  box-shadow: 0 8px 26px rgba(39,51,42,.045) !important;
+  color: #59645c !important;
+  border-radius: 14px !important;
+}
+.stat-card:hover, .skill-card:hover, .leadership-card:hover,
+.project-card:hover, .research-card:hover, .education-card:hover,
+.cert-card:hover, .contact-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(49,91,70,.35) !important;
+  box-shadow: 0 14px 32px rgba(39,51,42,.085) !important;
+}
+.stat-number, .score-value { color: #315b46 !important; }
+.stat-label, .score-label, .edu-institution, .timeline-org,
+.contact-label, .footer p { color: #788078 !important; }
+.skill-card h3, .education-card h4, .cert-card h4 { color: #28372d !important; }
+.skill-bar { background: #e8e4da !important; }
+.skill-fill { background: #315b46 !important; }
+.project-glow { display: none !important; }
+.project-icon, .leadership-icon, .edu-icon, .cert-icon,
+.contact-icon { background: #e9eee7 !important; color: #315b46 !important; }
+.project-badge, .research-badge { background: #f3e6df !important; color: #a65f45 !important; }
+.tag { background: #edf0e9 !important; color: #45634f !important; border: 1px solid #dce5da !important; }
+.timeline::before { background: #d8dfd5 !important; }
+.timeline-dot { background: #315b46 !important; border-color: #f7f4ec !important; }
+.btn-primary { background: #315b46 !important; color: #fffdf8 !important; border: 1px solid #315b46 !important; box-shadow: none !important; }
+.btn-primary:hover { background: #244735 !important; }
+.btn-secondary, .btn-outline { color: #315b46 !important; border: 1px solid #9aaf9e !important; background: transparent !important; }
+.btn-secondary:hover, .btn-outline:hover { background: #e9eee7 !important; }
+.form-group input, .form-group textarea {
+  background: #fffdf8 !important; color: #28372d !important;
+  border: 1px solid #ddd8cc !important;
+}
+.form-group input::placeholder, .form-group textarea::placeholder { color: #92988f !important; }
+.form-group input:focus, .form-group textarea:focus { border-color: #66866f !important; outline: none; }
+.footer { background: #263c30 !important; color: #e9eee7 !important; }
+.footer p, .footer-links a { color: #d4dfd4 !important; }
+.footer-links a:hover { color: #e9b49c !important; }
+@media (max-width: 768px) {
+  .nav-links { background: #fffdf8 !important; border: 1px solid #e5e0d4 !important; }
+}
